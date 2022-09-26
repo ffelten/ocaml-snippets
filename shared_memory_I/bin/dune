@@ -1,6 +1,6 @@
 (executables
- (public_names print_threads increment_threads)
- (names print_threads increment_threads)
+ (public_names print_threads increment_threads lock_increment_threads)
+ (names print_threads increment_threads lock_increment_threads)
  (libraries shared_memory threads)
  (flags (:standard -I +threads))
  )
