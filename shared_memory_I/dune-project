@@ -1,0 +1,21 @@
+(lang dune 3.4)
+
+(name shared_memory)
+
+(generate_opam_files true)
+
+(source
+ (github ffelten/ocaml-snippets))
+
+(authors "Florian Felten")
+
+(license MIT)
+
+(package
+ (name shared_memory)
+ (synopsis "Shared memory concurrency introduction. Race conditions.")
+ (description "")
+ (depends ocaml dune)
+ )
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
