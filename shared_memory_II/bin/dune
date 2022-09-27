@@ -1,0 +1,6 @@
+(executables
+ (public_names philosophers_lock philosophers_no_hold_wait)
+ (names philosophers_lock philosophers_no_hold_wait)
+ (libraries shared_memory threads)
+ (flags (:standard -I +threads))
+ )
