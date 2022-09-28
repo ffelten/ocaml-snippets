@@ -1,0 +1,23 @@
+(lang dune 3.4)
+
+(name multicore_ocaml)
+
+(generate_opam_files true)
+
+(source
+ (github ffelten/ocaml-snippets))
+
+(authors "Florian Felten")
+(maintainers "Florian Felten")
+
+
+(license MIT)
+
+(package
+ (name multicore_ocaml)
+ (synopsis "Multicore ocaml")
+ (description "")
+ (depends ocaml dune)
+ )
+
+

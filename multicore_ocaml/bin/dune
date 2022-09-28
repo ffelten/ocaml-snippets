@@ -1,0 +1,6 @@
+(executables
+ (public_names fib parallel_fib pool)
+ (names fib parallel_fib pool)
+ (libraries shared_memory threads domainslib)
+ (flags (:standard -I +threads))
+ )
