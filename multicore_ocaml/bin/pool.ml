@@ -1,11 +1,10 @@
-(* Executing 30 tasks in parallel on n_domains cores *)
+(* Executing 10000 tasks in parallel on n_domains cores *)
 let n_domains = 3 
-let n_tasks = 30 
+let n_tasks = 1000 
 
 module Task = Domainslib.Task
 
 let square n = 
-  Thread.delay 0.5;
   Printf.printf "square %d\n" n;
   n * n 
 
