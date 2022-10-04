@@ -1,0 +1,23 @@
+(lang dune 3.4)
+
+(name message_passing)
+
+(generate_opam_files true)
+
+(source
+ (github ffelten/ocaml-snippets))
+
+(authors "Florian Felten")
+(maintainers "Florian Felten")
+
+
+(license MIT)
+
+(package
+ (name message_passing)
+ (synopsis "message_passing ocaml")
+ (description "")
+ (depends ocaml dune)
+ )
+
+
