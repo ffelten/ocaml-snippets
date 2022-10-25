@@ -1,6 +1,6 @@
 let increment count lock n =
   let thread_id = Thread.id (Thread.self ()) in
-  for _=0 to n-1 do
+  for _ = 0 to n-1 do
     Mutex.lock lock;
     let c = !count in
     Thread.delay 0.5; (* Do something else, like read from file or call http query...*)
