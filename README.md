@@ -2,7 +2,7 @@
 OCaml example codes used for teaching PF3 @ Uni.lu.
 
 ## Structure
-Examples are divided by lectures, having one dune project by lecture. The example code is located in `src/` folder.
+Examples are divided by lectures, having one dune project by lecture. The example code is located in `bin/` folder.
 
 ## Running
 Enter any folder and run  
