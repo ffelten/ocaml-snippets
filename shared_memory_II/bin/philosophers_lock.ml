@@ -1,5 +1,6 @@
-let number = 2 in 
-let mutexes = Array.init number (fun _ -> Mutex.create ()) in
+let number = 2 
+let mutexes = Array.init number (fun _ -> Mutex.create ())
+
 let philosopher id = 
   let left = id in
   let right = (id + 1) mod number in
@@ -32,7 +33,10 @@ let philosopher id =
       think ();
       loop true
   in
-    loop true;
-in
-let threads = List.init number (fun n -> Thread.create philosopher n) in
-Thread.join (List.hd threads)
+    loop true
+
+let _ = 
+  Printf.printf "Launching";
+  flush stdout;
+  let threads = List.init number (fun id -> Thread.create philosopher id) in
+  Thread.join (List.hd threads)
