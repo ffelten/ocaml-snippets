@@ -13,7 +13,7 @@ let launch_tasks pool =
     Task.async pool (fun _ -> square i)
   )
 
-let () =
+let _ =
   (* Instantiating a thread pool *)
   let pool = Task.setup_pool ~num_additional_domains:(n_domains - 1) () in
 

@@ -12,7 +12,7 @@ let launch_tasks () =
     Domain.spawn (fun _ -> square i)
   )
 
-let () =
+let _ =
 
   (* Launching the tasks in the pool *)
   let tasks = launch_tasks () in
