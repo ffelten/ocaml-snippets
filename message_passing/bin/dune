@@ -1,6 +1,6 @@
 (executables
- (public_names hello_world_channel hello_world_channel_mut sieve test)
- (names hello_world_channel hello_world_channel_mut sieve test)
+ (public_names hello_world_channel hello_world_channel_mut)
+ (names hello_world_channel hello_world_channel_mut)
  (libraries shared_memory threads domainslib digestif)
  (flags (:standard -I +threads))
  )
