@@ -8,7 +8,7 @@ let philosopher id =
   let eat () = 
     Mutex.lock mutexes.(left);
     Thread.delay 0.3;
-    if Mutex.try_lock mutexes.(right); then
+    if Mutex.try_lock mutexes.(right) then
         begin
           Printf.printf "Philosopher %d is eating plate using forks left:%d, right:%d.\n" id left right;
           Thread.delay 0.3;
