@@ -5,6 +5,7 @@ let n_tasks = 10000
 
 let square n = 
   Printf.printf "square %d\n" n;
+  Thread.delay 0.5;
   n * n 
 
 let launch_tasks () = 

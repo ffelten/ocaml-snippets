@@ -15,7 +15,7 @@ let launch_tasks pool =
 
 let _ =
   (* Instantiating a thread pool *)
-  let pool = Task.setup_pool ~num_additional_domains:(n_domains - 1) () in
+  let pool = Task.setup_pool ~num_domains:(n_domains - 1) () in
 
   (* Launching the tasks in the pool *)
   let tasks = launch_tasks pool in
