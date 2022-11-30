@@ -38,7 +38,7 @@ let producer c =
 
 let () =
   (* Instantiating a thread pool *)
-  let pool = Task.setup_pool ~num_additional_domains:(n_domains - 1) () in
+  let pool = Task.setup_pool ~num_domains:(n_domains - 1) () in
 
   (* Bounded channel of size 2 *)
   let channel = Channel.make_bounded 2 in
