@@ -1,10 +1,9 @@
-# Multicore OCaml
-See https://kcsrk.info/ocaml5-tutorial/ and https://github.com/ocaml-multicore/parallel-programming-in-multicore-ocaml#domainslib. 
+# Message passing
+Introduction to channels, building up on bounded buffers.
 
 ## Run
 
 ```
-$ hyperfine "dune exec fib"
-$ hyperfine "dune exec parallel_fib"
-$ hyperfine "dune exec pool"
+$ dune exec hello_world_channel
+$ dune exec hello_world_channel_mut
 ```
